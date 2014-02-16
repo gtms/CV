@@ -5,8 +5,9 @@
      "amper")
     (TeX-run-style-hooks
      "hyperref"
-     "pdfauthor={My name}"
-     "pdftitle={Albert Einstein - vita}"
+     "pdfauthor={Gil Tomás}"
+     "pdftitle={Gil
+  Tomás - vita}"
      "breaklinks"
      "colorlinks"
      "bookmarks"
