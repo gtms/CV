@@ -1,4 +1,4 @@
-%------------------------------------
+% ------------------------------------
 % Dario Taraborelli
 % Typesetting your academic CV in LaTeX
 %
@@ -7,10 +7,10 @@
 % that it will correctly compile on your system if you have a non-standard
 % configuration.
 % Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
-%------------------------------------
+% ------------------------------------
 
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
 
 \documentclass[11pt, a4paper]{article}
 \usepackage{fontspec}
@@ -40,6 +40,7 @@
 \usepackage{sectsty}
 \usepackage[normalem]{ulem}
 \sectionfont{\sffamily\mdseries\large\underline}
+% \sectionfont{\sffamily\mdseries\large}
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize}
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
 
@@ -53,25 +54,26 @@
 \begin{document}
 \textsf{\LARGE Gil Tomás}\\[1cm]
 Calvijnstraat 24\\
-\texttt{1000} Brussels
-Belgium\\[.2cm]
-Phone: \texttt{609-734-8000}\\
-Fax: \texttt{609-924-8399}\\[.2cm]
-email: \href{mailto:a.einstein@ias.edu}{a.einstein@ias.edu}\\
-\textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\
+\texttt{1000} Brussels\\
+\textsc{belgium}\\[.2cm]
+Phone: \texttt{+32(0)487-371731}\\
+% Fax: \texttt{609-924-8399}\\[.2cm]
+email: \href{mailto:gil.tms@gmail.com}{gil.tms@gmail.com}\\
+% \textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\
 \vfill
-Born:  March 12, 1879---Ulm, Germany\\
-Nationality:  German/American
+Born:  September 9, 1977---Paray-le-Monial, France\\
+Nationality:  Portuguese
 
-%%\hrule
+%% \hrule
 \section*{Current position}
-\emph{Emeritus Professor}, Institute for Advanced Study, Princeton
+PhD candidate, \textsc{iribhm}, Université Libre de
+Bruxelles
 
-%%\hrule
+%% \hrule
 \section*{Areas of specialization}
-Physics; Relativity Theory.
+Molecular Biology; Oncology; Bioinformatics.
 
-%%\hrule
+%% \hrule
 \section*{Appointments held}
 
 \noindent\years{1903-1908}Swiss Patent Office, Bern\\
@@ -82,13 +84,12 @@ Physics; Relativity Theory.
 \years{1920-1930}University of Leiden\\
 \years{1932-1955}Institute for Advanced Study, Princeton
 
-%\hrule
+% \hrule
 \section*{Education}
 
-\noindent\years{1900}\textsc{MSc} in Physics, ETH Zürich\\
-\years{1900}\textsc{PhD} in Physics, ETH Zürich
+\noindent\years{2001}\textsc{MSc} in Biology, Universidade do Porto\\
 
-%\hrule
+% \hrule
 \section*{Grants, honors \amper{} awards}
 
 \noindent\years{1921}Nobel Prize in Physics, Nobel Foundation
@@ -120,20 +121,20 @@ Physics; Relativity Theory.
 
 ...
 
-%\hrule
+% \hrule
 \section*{Service to the profession}
 
 ...
 
-%\vspace{1cm}
+% \vspace{1cm}
 \vfill{}
-%\hrulefill
+% \hrulefill
 
 \begin{center}
-{\scriptsize  Last updated: \today\- •\- Typeset in \href{http://nitens.org/taraborelli/cvtex}{
-\fontspec{Times New Roman}\XeTeX }\\
-% ---- FILL IN THE FULL URL TO YOUR CV HERE
-\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+  {\scriptsize  Last updated: \today\- •\- Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+      \fontspec{Times New Roman}\XeTeX }}\\
+  % ---- FILL IN THE FULL URL TO YOUR CV HERE
+  % \href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
 \end{center}
 
 \end{document}
