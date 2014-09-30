@@ -15,18 +15,23 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage{fontspec}
 
+% BIBLIOGRAPHY MANAGEMENT
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
 % DOCUMENT LAYOUT
 \usepackage{geometry}
 \geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
 % FONTS
-\usepackage{xunicode}
-\usepackage{xltxtra}
-\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\usepackage{xunicode} \usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' ---
+                                       % dashes etc.) to unicode
 \setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Minion Pro}
-\setmonofont[Scale=0.8]{Consolas}
-\setsansfont[Scale=0.9]{Myriad Pro}
+\setmonofont[Scale=MatchLowercase]{Consolas}
+\setsansfont[Scale=MatchLowercase]{Myriad Pro}
 % ---- CUSTOM AMPERSAND
 \newcommand{\amper}{{\fontspec[Scale=.95]{Minion Pro}\selectfont\itshape\&}}
 % ---- MARGIN YEARS
@@ -46,8 +51,8 @@
 
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Gil
-  Tomás - vita},pdfauthor={Gil Tomás}]{hyperref}
+\usepackage[xetex, bookmarks, colorlinks, breaklinks,
+pdftitle={GilTomas-vita},pdfauthor={Gil Tomás}]{hyperref}
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}
 
 % DOCUMENT
@@ -74,57 +79,92 @@ Bruxelles
 Molecular Biology; Oncology; Bioinformatics.
 
 %% \hrule
-\section*{Appointments held}
+\section*{Work Experience}
 
-\noindent\years{1903-1908}Swiss Patent Office, Bern\\
-\years{1908-1911}University of Bern\\
-\years{1911-1912}University of Zürich\\
-\years{1912-1914}Charles University of Prague\\
-\years{1914-1932}Prussian Academy of Sciences, Berlin\\
-\years{1920-1930}University of Leiden\\
-\years{1932-1955}Institute for Advanced Study, Princeton
+\noindent\years{2002-2004}Researcher, \textsc{ipatimup}, Porto, Portugal\\
+\years{2003-2004}Researcher, Univerity of Maryland, \textsc{usa}\\
+\years{2005-2007}Self-employed, translator, private tutor (Biology, Chemestry, Mathematics)\\
+\years{2008-2009}Researcher, \textsc{iribhm}, Université Libre de Bruxelles, Belgium\\
+\years{2009-2014}PhD Candidate, \textsc{iribhm}, Université Libre de Bruxelles, Belgium\\
 
 % \hrule
 \section*{Education}
 
-\noindent\years{2001}\textsc{MSc} in Biology, Universidade do Porto\\
+\noindent\years{2001}\textsc{MSc} in Biology, Universidade do Porto \texttt{(15/20)}\\
 
 % \hrule
-\section*{Grants, honors \amper{} awards}
+% \section*{Grants, honors \amper{} awards}
+% \noindent\years{1921}Nobel Prize in Physics, Nobel Foundation
 
-\noindent\years{1921}Nobel Prize in Physics, Nobel Foundation
+\section*{Personal Skills \amper{} Competences}
+\subsection*{Language Skills}
+Fluent in English, French and Portuguese.  Proficient in Dutch.
 
-\section*{Publications \amper{} talks}
+\subsection*{Programming Competences}
+Fluent in \textsf{Unix} systems, \textsf{Emacs}, \textsf{Git}, \textsf{R}
+programming language and Bioconductor.
+
+Experience in managing complex software development projects.
+
+\section*{Publications}
 
 \subsection*{Journal articles}
+\noindent\years{2002}\bibentry{tomas_peopling_2002} \texttt{(cited by 29)}
 
-\noindent\years{1901}Einstein, Albert (1901), “Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)", \emph{Annalen der Physik} 4: 513\\
-\years{1905a}Einstein, Albert (1905), “On a Heuristic Viewpoint Concerning the Production and Transformation of Light", \emph{Annalen der Physik} 17: 132–148.\\
-\years{1905b}Einstein, Albert (1905), A new determination of molecular dimensions. \emph{PhD dissertation}.\\
-\years{1905c}Einstein, Albert (1905), “On the Motion—Required by the Molecular Kinetic Theory of Heat—of Small Particles Suspended in a Stationary Liquid", \emph{Annalen der Physik} 17: 549–560.
-\years{1905d}Einstein, Albert (1905), “On the Electrodynamics of Moving Bodies", \emph{Annalen der Physik} 17: 891–921.\\
-\years{1905e}Einstein, Albert (1905), “Does the Inertia of a Body Depend Upon Its Energy Content?", \emph{Annalen der Physik} 18: 639–641.\\
-\years{1915}Einstein, Albert (1915), “Die Feldgleichungen der Gravitation (The Field Equations of Gravitation)", \emph{Koniglich Preussische Akademie der Wissenschaften}: 844–847\\
-\years{1917a}Einstein, Albert (1917), “Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)", \emph{Koniglich Preussische Akademie der Wissenschaften}\\
-\years{1917b}Einstein, Albert (1917), “Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)", \emph{Physikalische Zeitschrift} 18: 121–128
+\noindent\years{2012\emph{a}}\bibentry{tomas_general_2012} \texttt{(cited by 6)}
 
-\subsection*{Books}
+\noindent\years{2012\emph{b}}\bibentry{van_staveren_role_2012} \texttt{(cited by 3)}
 
-\noindent\years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
+\noindent\years{2013\emph{a}}\bibentry{dom_5-aza-2-deoxycytidine_2013} \texttt{(cited by 3)}
 
-\subsection*{Newspaper articles}
+\noindent\years{2013\emph{b}}\bibentry{gomez_patterns_2013} \texttt{(cited by 3)}
+% \noindent\years{1901}Einstein, Albert (1901), “Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)", \emph{Annalen der Physik} 4: 513\\
+% \years{1905a}Einstein, Albert (1905), “On a Heuristic Viewpoint Concerning the Production and Transformation of Light", \emph{Annalen der Physik} 17: 132–148.\\
+% \years{1905b}Einstein, Albert (1905), A new determination of molecular dimensions. \emph{PhD dissertation}.\\
+% \years{1905c}Einstein, Albert (1905), “On the Motion—Required by the Molecular Kinetic Theory of Heat—of Small Particles Suspended in a Stationary Liquid", \emph{Annalen der Physik} 17: 549–560.
+% \years{1905d}Einstein, Albert (1905), “On the Electrodynamics of Moving Bodies", \emph{Annalen der Physik} 17: 891–921.\\
+% \years{1905e}Einstein, Albert (1905), “Does the Inertia of a Body Depend Upon Its Energy Content?", \emph{Annalen der Physik} 18: 639–641.\\
+% \years{1915}Einstein, Albert (1915), “Die Feldgleichungen der Gravitation (The Field Equations of Gravitation)", \emph{Koniglich Preussische Akademie der Wissenschaften}: 844–847\\
+% \years{1917a}Einstein, Albert (1917), “Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)", \emph{Koniglich Preussische Akademie der Wissenschaften}\\
+% \years{1917b}Einstein, Albert (1917), “Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)", \emph{Physikalische Zeitschrift} 18: 121–128
 
-\noindent\years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
-\years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
+\subsection*{Translated Books}
 
-\section*{Teaching}
+\noindent\years{2005} ``See No Evil: The True Story of a Ground Soldier
+in the CIA's War on Terrorism,'' Robert Baer, \emph{Quasi Edições}, 2005
 
-...
+\noindent\years{2006\emph{a}} ``Intelligence: A Very Short Introduction,'' Ian
+J. Dary, \emph{Quasi Edições}, 2006
 
-% \hrule
-\section*{Service to the profession}
+\noindent\years{2006\emph{b}} ``Dreaming: An Introduction to the Science of
+Sleep,'' J. Alan Hobson, \emph{Quasi Edições}, 2006
 
-...
+
+\noindent\years{2007\emph{a}} ``An Introduction to Christianity (Introduction to
+Religion),'' Linda Woodhead, \emph{Quasi Edições}, 2007
+
+
+\noindent\years{2007\emph{b}} ``The Good German,'' Joseph Canon, \emph{Quasi Edições}, 2007
+
+
+% \noindent\years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
+
+% \subsection*{Newspaper articles}
+
+% \noindent\years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
+% \years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
+
+% \section*{Teaching}
+
+% ...
+
+% % \hrule
+% \section*{Service to the profession}
+
+% ...
+
+\bibliographystyle{ieeetr}
+\nobibliography{cv.bib}
 
 % \vspace{1cm}
 \vfill{}
